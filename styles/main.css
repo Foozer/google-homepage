@@ -1,6 +1,8 @@
 body {
     font-size: 14px;
     font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -9,14 +11,10 @@ a {
     padding: 5px;
     text-decoration: none; 
 }
-
-#search-bar {
-    border-radius: 25px;
-    border: 1px solid rgb(179, 177, 177);
-    padding: 5px;
-    width: 600px;
-    height: 25px;
+a:hover {
+    text-decoration: underline;
 }
+
 
 #nav-top {
     display: flex;
@@ -26,10 +24,6 @@ a {
 
 .nav-links {
     color: #222;
-}
-
-.nav-links:hover {
-    text-decoration: underline;
 }
 
 .signin-button {
@@ -63,6 +57,14 @@ a {
     margin-bottom: 35px;
 }
 
+#search-bar {
+    border-radius: 25px;
+    border: 1px solid rgb(179, 177, 177);
+    padding: 5px;
+    width: 600px;
+    height: 25px;
+}
+
 #search-area {
     display: flex;
     justify-content: center;
@@ -73,3 +75,51 @@ a {
     display: flex;
     justify-content: center;
 }
+
+.search-links {
+    color: #222;
+    padding: 15px 25px;
+}
+
+.location-bar {
+    display: flex;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadce0;
+    padding: 14px 30px;
+    color: rgba(0,0,0, 0.54);
+}
+
+.bottom-bar {
+    display: flex;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadce0;
+    padding: 14px 30px;
+    color: rgba(0,0,0, 0.54);
+}
+
+.bottom-left-footer {
+    justify-content: left;
+}
+
+.bottom-center-footer {
+    justify-content: center;
+}
+
+.bottom-right-footer {
+    justify-content: right;
+}
+.footer-links {
+    color: rgba(0,0,0, 0.54);
+
+}
+
+footer {
+    color: rgba(0,0,0, 0.54);
+    border-bottom: 1px solid #dadce0;
+    margin-top: auto;
+
+    
+}
+
